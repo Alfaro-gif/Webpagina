@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.jpg" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/foto.jpg" alt="foto">
+      </div>
+      <div class="information">
+        <h1>
+          JUAN CARLOS ALFARO SÁNCHEZ 
+        </h1>
+        <span>
+          @Alfaro
+        </span>
+        <p> Ciclista profesional|Tour de Francia|dedicado|responsable</p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+        
+A lo largo de los años, he tenido la fortuna de participar en múltiples competiciones, incluyendo algunas de las más prestigiosas del mundo. Cada carrera es una mezcla de estrategia, resistencia y trabajo en equipo. He experimentado la euforia de las victorias y el aprendizaje que viene con las derrotas. Cada experiencia me ha hecho más fuerte y ha reforzado mi amor por este deporte.
+
+El ciclismo no solo me desafía físicamente, sino que también me ha enseñado lecciones valiosas sobre disciplina, dedicación y la importancia de mantener una mentalidad positiva. Me encanta entrenar en diferentes terrenos, desde montañas desafiantes hasta rutas costeras. Cada salida en bicicleta es una oportunidad para desconectar del mundo y conectarme conmigo mismo.
+
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://www.europapress.es/deportes/ciclismo-00396/noticia-curiosidades-bicicleta-ciclismo-debes-conocer-20221202112125.html" class="social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://parapupas.com/deporte-adaptado-ciclismo/" class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a href="https://es.m.wikipedia.org/wiki/Ciclismo_en_carretera" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+    <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+    </div>
+    </main>
+    <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+    </script>
+</div>
+</body>
+</html>
